@@ -31,6 +31,137 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 600;
 }
 
+.container,
+.container-fluid {
+  width: 100%;
+  padding: 0 30px;
+  margin: 0 auto;
+}
+
+.container .row,
+.container-fluid .row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin: 0 -15px;
+}
+
+@media (min-width: 1400px) {
+  .container {
+    width: 1320px;
+  }
+  .col-xxl-1 {
+    width: 8.33333%;
+    padding: 0 15px;
+  }
+  .col-xxl-2 {
+    width: 16.66667%;
+    padding: 0 15px;
+  }
+  .col-xxl-3 {
+    width: 25%;
+    padding: 0 15px;
+  }
+  .col-xxl-4 {
+    width: 33.33333%;
+    padding: 0 15px;
+  }
+  .col-xxl-5 {
+    width: 41.66667%;
+    padding: 0 15px;
+  }
+  .col-xxl-6 {
+    width: 50%;
+    padding: 0 15px;
+  }
+  .col-xxl-7 {
+    width: 58.33333%;
+    padding: 0 15px;
+  }
+  .col-xxl-8 {
+    width: 66.66667%;
+    padding: 0 15px;
+  }
+  .col-xxl-9 {
+    width: 75%;
+    padding: 0 15px;
+  }
+  .col-xxl-10 {
+    width: 83.33333%;
+    padding: 0 15px;
+  }
+  .col-xxl-11 {
+    width: 91.66667%;
+    padding: 0 15px;
+  }
+  .col-xxl-12 {
+    width: 100%;
+    padding: 0 15px;
+  }
+}
+
+@media (min-width: 1200px) and (max-width: 1400px) {
+  .container {
+    width: 1140px;
+  }
+  .col-xl-1 {
+    width: 8.33333%;
+    padding: 0 15px;
+  }
+  .col-xl-2 {
+    width: 16.66667%;
+    padding: 0 15px;
+  }
+  .col-xl-3 {
+    width: 25%;
+    padding: 0 15px;
+  }
+  .col-xl-4 {
+    width: 33.33333%;
+    padding: 0 15px;
+  }
+  .col-xl-5 {
+    width: 41.66667%;
+    padding: 0 15px;
+  }
+  .col-xl-6 {
+    width: 50%;
+    padding: 0 15px;
+  }
+  .col-xl-7 {
+    width: 58.33333%;
+    padding: 0 15px;
+  }
+  .col-xl-8 {
+    width: 66.66667%;
+    padding: 0 15px;
+  }
+  .col-xl-9 {
+    width: 75%;
+    padding: 0 15px;
+  }
+  .col-xl-10 {
+    width: 83.33333%;
+    padding: 0 15px;
+  }
+  .col-xl-11 {
+    width: 91.66667%;
+    padding: 0 15px;
+  }
+  .col-xl-12 {
+    width: 100%;
+    padding: 0 15px;
+  }
+}
+
+.single-service {
+  background-color: tomato;
+  padding: 10px;
+  margin: 20px 0;
+}
+
 /* Utils */
 /* Layouts */
 .header {
