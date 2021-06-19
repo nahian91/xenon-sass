@@ -1,0 +1,35 @@
+.section-title {
+  h4 {
+    text-transform: capitalize;
+    font-size: 40px;
+    font-weight: 800;
+    line-height: 50px;
+    display: inline-block;
+    position: relative;
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+    &:before {
+      position: absolute;
+      content: "";
+      width: 60px;
+      height: 2px;
+      background-color: $primary_color;
+      bottom: 0;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+    &:after {
+      position: absolute;
+      content: "";
+      width: 10px;
+      height: 10px;
+      background-color: $primary_color;
+      bottom: -4px;
+      left: 50%;
+      transform: translateX(-50%);
+      border-radius: 50%;
+    }
+  }
+  p {
+  }
+}

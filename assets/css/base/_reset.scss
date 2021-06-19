@@ -1,4 +1,4 @@
-@import 'variables';
+@import "variables";
 
 * {
   margin: 0;
@@ -7,6 +7,7 @@
 }
 a {
   text-decoration: none;
+  transition: .3s;
 }
 img {
   max-width: 100%;
@@ -17,12 +18,12 @@ ul {
 }
 
 /* Background Image CSS */
-.bg{
+.bg {
   background-size: cover;
   background-position: center;
   position: relative;
   z-index: 2;
-  &:before{
+  &:before {
     position: absolute;
     content: "";
     width: 100%;
@@ -30,30 +31,46 @@ ul {
     left: 0;
     top: 0;
     background-color: $black;
-    opacity: .75;
+    opacity: 0.75;
     z-index: -1;
   }
 }
 
+/* Padding & Margin */ 
+@for $i from 1 through 10{
+  .pt-#{$i * 10}{
+    padding-top: $i * 10px;
+  }
+  .pb-#{$i * 10}{
+    padding-bottom: $i * 10px;
+  }
+  .mt-#{$i * 10}{
+    margin-top: $i * 10px;
+  }
+  .mb-#{$i * 10}{
+    margin-bottom: $i * 10px;
+  }
+}
+
 /* Button CSS */
-.btn{
+.btn {
   display: inline-block;
   color: #fff;
   font-size: 20px;
   text-transform: capitalize;
   line-height: 30px;
   border-radius: 3px;
-  &.btn-primary{
+  &.btn-primary {
     background-color: $btn_background;
     padding: 10px 30px;
-    &:hover{
+    &:hover {
       background-color: $btn_hover;
     }
   }
-  &.btn-border{
+  &.btn-border {
     border: 2px solid $btn_background;
     padding: 8px 30px;
-    &:hover{
+    &:hover {
       background-color: $btn_hover;
       border-color: $btn_hover;
     }
