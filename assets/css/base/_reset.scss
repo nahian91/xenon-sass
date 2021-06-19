@@ -1,15 +1,93 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+@import 'variables';
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-a{
-    text-decoration: none;
+a {
+  text-decoration: none;
 }
-img{
-    max-width: 100%;
-    vertical-align: middle;
+img {
+  max-width: 100%;
+  vertical-align: middle;
 }
-ul{
-    list-style: none;
+ul {
+  list-style: none;
+}
+
+/* Background Image CSS */
+.bg{
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  z-index: 2;
+  &:before{
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background-color: $black;
+    opacity: .75;
+    z-index: -1;
+  }
+}
+
+/* Button CSS */
+.btn{
+  display: inline-block;
+  color: #fff;
+  font-size: 20px;
+  text-transform: capitalize;
+  line-height: 30px;
+  border-radius: 3px;
+  &.btn-primary{
+    background-color: $btn_background;
+    padding: 10px 30px;
+    &:hover{
+      background-color: $btn_hover;
+    }
+  }
+  &.btn-border{
+    border: 2px solid $btn_background;
+    padding: 8px 30px;
+    &:hover{
+      background-color: $btn_hover;
+      border-color: $btn_hover;
+    }
+  }
+}
+
+$align: left, center, right, justify;
+@each $i in $align {
+  .text-#{$i} {
+    text-align: $i;
+  }
+}
+
+/* Flex CSS */
+
+$flex: flex, inline-flex;
+@each $i in $flex {
+  .d-#{$i} {
+    display: $i;
+  }
+}
+
+$justify: start, center, end, evenly, space-around, space-between;
+
+@each $i in $justify {
+  .justify-content-#{$i} {
+    justify-content: $i;
+  }
+}
+
+$align-items: start, center, end, stretch, baseline;
+
+@each $i in $align-items {
+  .align-items-#{$i} {
+    align-items: $i;
+  }
 }
