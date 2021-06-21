@@ -475,8 +475,8 @@ h1, h2, h3, h4, h5, h6 {
   line-height: 50px;
   display: inline-block;
   position: relative;
-  margin-bottom: 10px;
-  padding-bottom: 10px;
+  margin-bottom: 15px;
+  padding-bottom: 15px;
 }
 
 .section-title h4:before {
@@ -502,14 +502,6 @@ h1, h2, h3, h4, h5, h6 {
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
   border-radius: 50%;
-}
-
-.header-area {
-  position: fixed;
-  left: 0;
-  right: 0;
-  padding: 20px 0;
-  z-index: 999;
 }
 
 .header-area .logo a {
@@ -613,5 +605,168 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 24px;
   margin: 15px 0;
   text-transform: capitalize;
+}
+
+.projects-area .col-xxl-4 {
+  padding: 0;
+}
+
+.projects-area .single-project {
+  background-size: cover;
+  background-position: center;
+  height: 300px;
+}
+
+.projects-area .single-project:hover .project-content {
+  opacity: 1;
+  visibility: visible;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.projects-area .project-content {
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #fff;
+  position: relative;
+  z-index: 2;
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transform: scale(0);
+          transform: scale(0);
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.projects-area .project-content::before {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  background-color: #333;
+  opacity: 0.75;
+  z-index: -1;
+}
+
+.projects-area .project-content h4 {
+  font-size: 24px;
+  text-transform: capitalize;
+  text-align: center;
+}
+
+.projects-area .project-content h4 span {
+  display: block;
+  font-size: 16px;
+  text-transform: lowercase;
+  font-weight: 400;
+  margin-top: 5px;
+}
+
+.projects-area .project-content a {
+  color: #fff;
+  font-size: 28px;
+  margin-bottom: 10px;
+}
+
+.counter-area {
+  background-color: #0f1113;
+  color: #fff;
+}
+
+.counter-area .single-counter {
+  text-align: center;
+}
+
+.counter-area .single-counter i {
+  font-size: 20px;
+  background-color: #ff3636;
+  padding: 16px;
+  margin-bottom: 18px;
+}
+
+.counter-area .single-counter h4 {
+  font-size: 40px;
+  line-height: 30px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.counter-area .single-counter p {
+  text-transform: capitalize;
+}
+
+.timeline-area .timeline-list {
+  position: relative;
+}
+
+.timeline-area .timeline-list:after {
+  position: absolute;
+  content: "";
+  width: 2px;
+  height: 100%;
+  background-color: #ff3636;
+  left: 50%;
+  top: 0;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+.timeline-area .timeline-list li {
+  position: relative;
+  clear: both;
+  overflow: hidden;
+}
+
+.timeline-area .timeline-list li:after {
+  position: absolute;
+  content: "";
+  width: 20px;
+  height: 20px;
+  background-color: #ff3636;
+  border-radius: 50%;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.timeline-area .timeline-list li:nth-child(even) .timeline-content {
+  float: right;
+  text-align: left;
+}
+
+.timeline-area .timeline-list li .timeline-content {
+  border: 2px solid #ff3636;
+  padding: 20px;
+  float: left;
+  width: 45%;
+  text-align: right;
+}
+
+.timeline-area .timeline-list li .timeline-content span {
+  font-size: 20px;
+  color: #ff3636;
+  font-weight: 600;
+}
+
+.timeline-area .timeline-list li .timeline-content h4 {
+  text-transform: capitalize;
+  font-size: 30px;
+  line-height: 45px;
+  margin-bottom: 5px;
 }
 /*# sourceMappingURL=style.css.map */
