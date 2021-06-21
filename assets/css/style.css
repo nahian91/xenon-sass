@@ -24,6 +24,10 @@ ul {
   list-style: none;
 }
 
+.mx-auto {
+  margin: 0 auto;
+}
+
 /* Background Image CSS */
 .bg {
   background-size: cover;
@@ -768,5 +772,134 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 30px;
   line-height: 45px;
   margin-bottom: 5px;
+}
+
+.testimonials-area {
+  background-color: #333;
+  color: #fff;
+}
+
+.testimonials-area .testimonials .slick-arrow {
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  background-color: transparent;
+  border: 0;
+  cursor: pointer;
+}
+
+.testimonials-area .testimonials .slick-arrow i {
+  color: #fff;
+  font-size: 20px;
+  background-color: tomato;
+  padding: 10px;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  line-height: 20px;
+}
+
+.testimonials-area .testimonials .slick-prev {
+  left: -50px;
+}
+
+.testimonials-area .testimonials .slick-next {
+  right: -50px;
+}
+
+.testimonials-area .testimonials .slick-dots {
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  margin-top: 30px;
+}
+
+.testimonials-area .testimonials .slick-dots li {
+  display: inline-block;
+  margin: 0 5px;
+}
+
+.testimonials-area .testimonials .slick-dots li.slick-active button {
+  background-color: tomato;
+  color: #fff;
+}
+
+.testimonials-area .testimonials .slick-dots li button {
+  background-color: #ddd;
+  border: 0;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.testimonials-area .single-testimonials {
+  text-align: center;
+}
+
+.testimonials-area .single-testimonials img {
+  border-radius: 50%;
+  margin-bottom: 20px;
+  margin: 0 auto;
+}
+
+.testimonials-area .single-testimonials h4 {
+  font-size: 26px;
+  text-transform: capitalize;
+  margin-top: 30px;
+}
+
+.testimonials-area .single-testimonials h4 span {
+  display: block;
+  font-size: 16px;
+  font-weight: 500;
+  text-transform: lowercase;
+  margin-top: 9px;
+}
+
+.price-area {
+  background-color: #eee;
+}
+
+.price-area .single-price {
+  text-align: center;
+  background-color: #fff;
+  padding: 30px 40px;
+}
+
+.price-area .single-price.active {
+  border: 5px solid #ff3636;
+}
+
+.price-area .single-price span {
+  display: block;
+  text-transform: uppercase;
+  font-size: 22px;
+  font-weight: 700;
+}
+
+.price-area .single-price h4 {
+  font-size: 50px;
+  margin: 40px 0;
+  font-weight: 800;
+}
+
+.price-area .single-price ul {
+  margin-bottom: 30px;
+}
+
+.price-area .single-price ul li {
+  border-bottom: 1px solid #f2f2f2;
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+  font-size: 17px;
+}
+
+.price-area .single-price ul li:last-child {
+  border-bottom: 0;
+  margin-bottom: 0;
+  padding-bottom: 0;
 }
 /*# sourceMappingURL=style.css.map */
