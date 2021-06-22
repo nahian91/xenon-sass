@@ -902,4 +902,205 @@ h1, h2, h3, h4, h5, h6 {
   margin-bottom: 0;
   padding-bottom: 0;
 }
+
+.team-area .single-team {
+  position: relative;
+  overflow: hidden;
+}
+
+.team-area .single-team:hover .team-overlay {
+  bottom: 0;
+}
+
+.team-area .single-team img {
+  width: 100%;
+}
+
+.team-area .single-team .team-overlay {
+  position: absolute;
+  bottom: -136px;
+  left: 0;
+  text-align: center;
+  width: 100%;
+  background-color: #333;
+  padding: 25px 0;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.team-area .single-team .team-overlay h4 {
+  text-transform: capitalize;
+  font-size: 24px;
+  color: #fff;
+  margin-bottom: 15px;
+}
+
+.team-area .single-team .team-overlay h4 span {
+  text-transform: lowercase;
+  font-size: 16px;
+  display: block;
+  font-weight: 400;
+  margin-top: 5px;
+}
+
+.team-area .single-team .team-overlay a {
+  color: #fff;
+  margin: 0 5px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.team-area .single-team .team-overlay a:hover {
+  color: #ff3636;
+}
+
+.blog-area {
+  background-color: #f6f6f6;
+}
+
+.blog-area .single-blog {
+  background-color: #fff;
+}
+
+.blog-area .single-blog:hover img {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.blog-area .single-blog .blog-img {
+  position: relative;
+  overflow: hidden;
+}
+
+.blog-area .single-blog .blog-img img {
+  width: 100%;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+.blog-area .single-blog .blog-meta {
+  width: 80%;
+  background-color: #fff;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  border: 1px solid #f2f2f2;
+  padding: 10px;
+  margin-top: -20px;
+  z-index: 2;
+  position: relative;
+}
+
+.blog-area .single-blog .blog-meta a {
+  color: #333;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+.blog-area .single-blog .blog-meta a:hover {
+  color: #ff3636;
+}
+
+.blog-area .blog-content {
+  padding: 20px;
+}
+
+.blog-area .blog-content h4 {
+  font-size: 20px;
+  text-transform: capitalize;
+}
+
+.blog-area .blog-content p {
+  margin: 15px 0;
+}
+
+.blog-area .blog-content a {
+  padding: 5px 20px;
+  font-size: 16px;
+}
+
+.cta-area {
+  text-align: center;
+  color: #fff;
+}
+
+.cta-area i {
+  color: #fff;
+  font-size: 80px;
+  margin-bottom: 20px;
+}
+
+.cta-area h4 {
+  text-transform: capitalize;
+  font-size: 40px;
+  line-height: 50px;
+  font-weight: 700;
+}
+
+.cta-area p {
+  margin: 10px 0 25px;
+}
+
+.contact-area .contact-form input, .contact-area .contact-form textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #f2f2f2;
+  margin-bottom: 15px;
+}
+
+.contact-area .contact-form input[type="submit"] {
+  background-color: #ff3636;
+  color: #fff;
+  padding: 10px;
+  font-size: 22px;
+  text-transform: uppercase;
+  font-weight: 500;
+  cursor: pointer;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+.contact-area .contact-form input[type="submit"]:hover {
+  background-color: #333;
+}
+
+.contact-area .single-contact {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 30px;
+}
+
+.contact-area .single-contact i {
+  background-color: tomato;
+  color: #fff;
+  padding: 12px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.contact-area .single-contact h4 {
+  text-transform: uppercase;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.contact-area .single-contact h4 span {
+  display: block;
+  font-size: 16px;
+  font-weight: 400;
+  text-transform: lowercase;
+  margin-top: 5px;
+}
+
+.contact-area .single-contact h4 span:last-child {
+  margin-bottom: 0;
+}
 /*# sourceMappingURL=style.css.map */

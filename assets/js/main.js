@@ -6,6 +6,10 @@ $(document).ready(function () {
     },
   });
 
+  $(".video").magnificPopup({
+    type: "iframe"
+  });
+
   $('.counter').counterUp();
 
   $('.testimonials').slick({
